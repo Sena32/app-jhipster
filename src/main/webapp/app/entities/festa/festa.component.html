@@ -1,0 +1,41 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="jhipsterApp.festa.home.title">Festas</span>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="festas?.length === 0">
+        <span jhiTranslate="jhipsterApp.festa.home.notFound">No festas found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="festas?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="jhipsterApp.festa.name">Name</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let festa of festas ;trackBy: trackId">
+                    <td><a [routerLink]="['/festa', festa.id, 'view']">{{ festa.id }}</a></td>
+                    <td>{{ festa.name }}</td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/festa', festa.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

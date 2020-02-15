@@ -1,0 +1,20 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20200215180031",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "festa",
+    "databaseType": "sql",
+    "readOnly": true,
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

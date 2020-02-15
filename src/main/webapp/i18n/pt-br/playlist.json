@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "playlist": {
+      "home": {
+        "title": "Playlists",
+        "createLabel": "Criar novo Playlist",
+        "createOrEditLabel": "Criar ou editar Playlist",
+        "notFound": "Nenhum Playlist encontrado"
+      },
+      "created": "Um novo Playlist foi criado com o identificador {{ param }}",
+      "updated": "Um Playlist foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Playlist foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Playlist {{ id }}?"
+      },
+      "detail": {
+        "title": "Playlist"
+      },
+      "name": "Name",
+      "style": "Style",
+      "dtCreate": "Dt Create",
+      "musica": "Musica"
+    }
+  }
+}

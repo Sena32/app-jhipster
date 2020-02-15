@@ -1,0 +1,34 @@
+{
+    "name": "Musica",
+    "fields": [
+        {
+            "fieldName": "name",
+            "javadoc": "The firstname attribute.",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "track",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "playlist",
+            "otherEntityRelationshipName": "musica",
+            "relationshipName": "playlist",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200215183700",
+    "javadoc": "The Employee entity.",
+    "entityTableName": "musica",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
